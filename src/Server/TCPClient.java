@@ -19,7 +19,7 @@ public class TCPClient extends Client {
 
     @Override
     public Msg rcvData() {
-        return null;
+        //return null;
     }
 
     @Override
