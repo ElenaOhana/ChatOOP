@@ -2,6 +2,7 @@ package Server;
 
 import java.io.IOException;
 import java.net.ServerSocket;
+import java.net.Socket;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class TCPListener extends Thread implements IListener {
@@ -30,7 +31,24 @@ public class TCPListener extends Thread implements IListener {
 
     @Override
     public void run() {
-        super.run();
+        runListener.set(true);
+        while (runListener.get() && chatHelper != null) {
+            if (pauseListener.get()){
+                try {
+                    monitor.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            Socket socket = null;
+            try {
+                socket = serverSocket.accept();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            TCPClient tcpClient = new TCPClient(socket);
+            chatHelper.addClientToQueue(tcpClient);
+        }
     }
 
     @Override
