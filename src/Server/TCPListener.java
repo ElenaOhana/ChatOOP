@@ -10,9 +10,9 @@ public class TCPListener extends Thread implements IListener {
     int port;
     IChatHelper chatHelper;
     ServerSocket serverSocket;
-    AtomicBoolean runListener = new AtomicBoolean(true);
+    /*AtomicBoolean runListener = new AtomicBoolean(true);
     AtomicBoolean pauseListener = new AtomicBoolean(false);
-    Object monitor = new Object();
+    Object monitor = new Object();*/
 
     public TCPListener(String address, int port) {
         this.address = address;
@@ -31,15 +31,8 @@ public class TCPListener extends Thread implements IListener {
 
     @Override
     public void run() {
-        runListener.set(true);
-        while (runListener.get() && chatHelper != null) {
-            if (pauseListener.get()){
-                try {
-                    monitor.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+        //runListener.set(true);
+        while (true) {
             Socket socket = null;
             try {
                 socket = serverSocket.accept();
@@ -53,23 +46,23 @@ public class TCPListener extends Thread implements IListener {
 
     @Override
     public void pauseListen() {
-        try {
+        /*try {
             serverSocket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        pauseListener.set(true);
+        pauseListener.set(true);*/
     }
 
     @Override
     public void stopListen() {
-        pauseListener.set(false);
+        //pauseListener.set(false);
         try {
             serverSocket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        runListener.set(false);
+        //runListener.set(false);
     }
 
     @Override
@@ -79,7 +72,7 @@ public class TCPListener extends Thread implements IListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        monitor.notify();
+        //monitor.notify();
     }
 
     @Override
