@@ -1,5 +1,5 @@
 package Server;
 
-public interface IReciever {
+public interface IReceiver {
    Msg rcvData();
 }

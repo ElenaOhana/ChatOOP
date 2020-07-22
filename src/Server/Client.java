@@ -1,4 +1,4 @@
 package Server;
 
-public abstract class Client implements IReciever, ISender{
+public abstract class Client implements IReceiver, ISender{
 }

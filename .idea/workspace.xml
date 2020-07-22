@@ -29,6 +29,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../slassroom/java1/homeWorkATM" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -53,11 +54,11 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="529" y="146" key="#com.intellij.ide.util.MemberChooser" timestamp="1594032685516">
+    <state x="529" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1595326666865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1176" y="59" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1920.-183.1920.1040@-1920.-183.1920.1040" timestamp="1593967199759" />
-    <state x="529" y="146" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1920.-183.1920.1040@0.0.1366.728" timestamp="1594032685516" />
+    <state x="529" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1920.-183.1920.1040@0.0.1366.728" timestamp="1595326666865" />
     <state x="508" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594032347762">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -67,6 +68,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-183.1920.1040@0.0.1366.728" timestamp="1594032576134" />
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1594557879043">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728/-1920.-183.1920.1040@0.0.1366.728" timestamp="1594557879043" />
+    <state x="131" y="0" key="new project wizard" timestamp="1595317280262">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="131" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1595317280262" />
     <state x="-1239" y="-26" key="refactoring.ChangeSignatureDialog" timestamp="1593850874842">
       <screen x="-1920" y="-183" width="1920" height="1040" />
     </state>
